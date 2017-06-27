@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="CampanhaServiceImplService" targetNamespace="http://service.project.prova/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://service.project.prova/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/">
+  <wsdl:types>
+<schema xmlns="http://www.w3.org/2001/XMLSchema">
+  <import namespace="http://service.project.prova/" schemaLocation="campanhaserviceimpl_schema1.xsd"/>
+</schema>
+  </wsdl:types>
+  <wsdl:message name="retreiveByClient">
+    <wsdl:part name="parameters" element="tns:retreiveByClient">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="deleteResponse">
+    <wsdl:part name="parameters" element="tns:deleteResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="retreiveByCampanhaResponse">
+    <wsdl:part name="parameters" element="tns:retreiveByCampanhaResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="retreiveByTeamResponse">
+    <wsdl:part name="parameters" element="tns:retreiveByTeamResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="retreiveByClientResponse">
+    <wsdl:part name="parameters" element="tns:retreiveByClientResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="delete">
+    <wsdl:part name="parameters" element="tns:delete">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="retreiveByCampanha">
+    <wsdl:part name="parameters" element="tns:retreiveByCampanha">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="updateResponse">
+    <wsdl:part name="parameters" element="tns:updateResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="retreiveByTeam">
+    <wsdl:part name="parameters" element="tns:retreiveByTeam">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="create">
+    <wsdl:part name="parameters" element="tns:create">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="createResponse">
+    <wsdl:part name="parameters" element="tns:createResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="update">
+    <wsdl:part name="parameters" element="tns:update">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="CampanhaService">
+    <wsdl:operation name="retreiveByClient">
+      <wsdl:input name="retreiveByClient" message="tns:retreiveByClient">
+    </wsdl:input>
+      <wsdl:output name="retreiveByClientResponse" message="tns:retreiveByClientResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <wsdl:input name="delete" message="tns:delete">
+    </wsdl:input>
+      <wsdl:output name="deleteResponse" message="tns:deleteResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retreiveByCampanha">
+      <wsdl:input name="retreiveByCampanha" message="tns:retreiveByCampanha">
+    </wsdl:input>
+      <wsdl:output name="retreiveByCampanhaResponse" message="tns:retreiveByCampanhaResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retreiveByTeam">
+      <wsdl:input name="retreiveByTeam" message="tns:retreiveByTeam">
+    </wsdl:input>
+      <wsdl:output name="retreiveByTeamResponse" message="tns:retreiveByTeamResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <wsdl:input name="create" message="tns:create">
+    </wsdl:input>
+      <wsdl:output name="createResponse" message="tns:createResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <wsdl:input name="update" message="tns:update">
+    </wsdl:input>
+      <wsdl:output name="updateResponse" message="tns:updateResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="CampanhaServiceImplServiceSoapBinding" type="tns:CampanhaService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="retreiveByClient">
+      <soap:operation soapAction="urn:RetreiveByClient" style="document"/>
+      <wsdl:input name="retreiveByClient">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="retreiveByClientResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="delete">
+      <soap:operation soapAction="urn:Delete" style="document"/>
+      <wsdl:input name="delete">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="deleteResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retreiveByCampanha">
+      <soap:operation soapAction="urn:RetreiveByCampanha" style="document"/>
+      <wsdl:input name="retreiveByCampanha">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="retreiveByCampanhaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retreiveByTeam">
+      <soap:operation soapAction="urn:RetreiveByTeam" style="document"/>
+      <wsdl:input name="retreiveByTeam">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="retreiveByTeamResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="create">
+      <soap:operation soapAction="urn:Create" style="document"/>
+      <wsdl:input name="create">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="update">
+      <soap:operation soapAction="urn:Update" style="document"/>
+      <wsdl:input name="update">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CampanhaServiceImplService">
+    <wsdl:port name="CampanhaServiceImplPort" binding="tns:CampanhaServiceImplServiceSoapBinding">
+      <soap:address location="http://localhost:8080/prova-project/services/CampanhaServiceImplPort"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

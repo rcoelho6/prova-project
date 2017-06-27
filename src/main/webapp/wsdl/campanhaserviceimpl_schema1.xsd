@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?><xs:schema xmlns:tns="http://service.project.prova/" xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="unqualified" targetNamespace="http://service.project.prova/" version="1.0">
+<xs:element name="create" type="tns:create"/>
+<xs:element name="createResponse" type="tns:createResponse"/>
+<xs:element name="delete" type="tns:delete"/>
+<xs:element name="deleteResponse" type="tns:deleteResponse"/>
+<xs:element name="retreiveByCampanha" type="tns:retreiveByCampanha"/>
+<xs:element name="retreiveByCampanhaResponse" type="tns:retreiveByCampanhaResponse"/>
+<xs:element name="retreiveByClient" type="tns:retreiveByClient"/>
+<xs:element name="retreiveByClientResponse" type="tns:retreiveByClientResponse"/>
+<xs:element name="retreiveByTeam" type="tns:retreiveByTeam"/>
+<xs:element name="retreiveByTeamResponse" type="tns:retreiveByTeamResponse"/>
+<xs:element name="update" type="tns:update"/>
+<xs:element name="updateResponse" type="tns:updateResponse"/>
+<xs:complexType name="retreiveByClient">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="json" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="retreiveByClientResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="delete">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="json" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="deleteResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="retreiveByCampanha">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="json" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="retreiveByCampanhaResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="retreiveByTeam">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="json" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="retreiveByTeamResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="create">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="json" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="createResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="update">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="json" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="updateResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
